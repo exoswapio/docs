@@ -15,9 +15,7 @@ image: https://raw.githubusercontent.com/stratosnet/token-lists/master/logo.svg
 
 **Native token** - the token, which is the main currency of some blockchain (like STOS, BNB, ETH)
 
-**Donored token** - the token, which is already exists on some chain and should be replicated on another;
-
-**Exoswap token** - the token, which is connected to some existing donored token;
+**Mintable token** - the token, which is already exists on some chain and should be replicated on another;
 
 **Mint** - process of exoswap token creation;
 
@@ -33,6 +31,6 @@ image: https://raw.githubusercontent.com/stratosnet/token-lists/master/logo.svg
 
 **Cosigner** - participant of fraud detection and proof creation for bridge exit process;
 
-**Exoswap** - group of cosigners that applied more than 66% of votes
+**Verifier group** - group of cosigners that applied more than 66% of votes
 
 **Orchestrator** - in terms of bridge, the main bridge which connects different networks

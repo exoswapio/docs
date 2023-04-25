@@ -33,13 +33,13 @@ Architecturally, the beauty of Exoswap bridge is its simple, straightforward des
 
 ### Description of workflow
 
-Currently, developers can use **Exoswap Bridge** for specific needs to automate DEX cross chain usage behind our contracts with the help of cosigners handling. **Cosigner** shortly is who verify and sign a transactions for validity, so give it's proof. The group of cosigners called **exoswap** which regulates the token pegging, detect fraud and oracalize netowork info.
+Currently, developers can use **Exoswap Bridge** for specific needs to automate DEX cross chain usage behind our contracts with the help of cosigners handling. **Cosigner** shortly is who verify and sign a transactions for validity, so give it's proof. The group of cosigners called **verifier group** which regulates the token pegging, detect fraud and oracalize netowork info.
 
-The native chain to make bridge used Stratos network with the power of OLVM and called **orchestrator** bridge.
+The native chain to make bridge used Stratos network with the power of EVM and called **exoswap** bridge.
 
-Exoswap bridge has a three-steps architecture, hovewer tokens logics differ in case of token **donorship**. Let's introduce a quick example.
+Exoswap bridge has a three-steps architecture, hovewer tokens logics differ in case of token **original transfers**. Let's introduce a quick example.
 
-The native currency on the Stratos is STOS token. In case of Ethereum it's pegged representation will be STOS (means **syndicated**). So STOS token is **syndicated** token and native STOS is **donored**. In combination it represent the following schema for user when he cross-chain transfer from Stratos to Ethereum:
+The native currency on the Stratos is STOS token. In case of Ethereum it's pegged representation will be STOS (means **mintable**). So STOS token is **mintable** token and native STOS is **original**. In combination it represent the following schema for user when he cross-chain transfer from Stratos to Ethereum:
 
 1. Locking STOS amount on the Stratos bridge;
 2. Obtain exoswap signatures for proof;
@@ -67,16 +67,30 @@ As example let's take Stratos to Ethereum flow
 
 `NOTE: same flow for all cross-chains EVM networks`
 
-<img src={useBaseUrl("img/architecture/exoswap-bridge.svg")} />
+<img src={useBaseUrl("img/architecture/evm_bridge_flow.drawio.svg")} />
+
+**Start flow:**
 
 1. User send his crypto to a bridge on Stratos network ([enter](/docs/bridge/contracts/bridge-router#enter) / [enterETH](/docs/bridge/contracts/bridge-router#enterETH));
-2. Stratos network will store info about this operation, will lock if token is donored or burn if token is syndicated;
-3. Exoswap orchestrator will see the commit result of **enter** operation and should ask SAO for validate a proof;
+2. Stratos network will store info about this operation, will lock if token is original or burn if token is mintable;
+3. Exoswap verifier will see the commit result of **enter** operation and should ask SAO for validate a proof;
 4. SAO roundrobinly will sign the transactions with 2/3 voting power and will make it available for user;
-5. User obtain exoswap's signatures for next process;
-6. User send transaction to a bridge on Ethereum network ([exit](/docs/bridge/contracts/bridge-router#exit)) with obtained signatures;
-7. Ethereum network will store info about this operation, will unlock the 1-to-1 equivalent of tokens if token is donored or mint 1-to-1 equivalent if token is syndicated;
-8. Exoswap orchestrator will verify exit to be on sync for both chains;
+5. If bridge tx could cover execution fee, relayer will be used;
+
+**If no:**
+
+1. (**U6a**) User obtain exoswap's signatures for next process;
+2. (**U6b**) User send transaction to a bridge on Ethereum network ([exit](/docs/bridge/contracts/bridge-router#exit)) with obtained signatures;
+
+**If yes:**
+
+1. (**R6**) Relayer send transaction on behalf to a bridge on Ethereum network ([exit](/docs/bridge/contracts/bridge-router#exit)) with obtained signatures;
+
+
+**Rest flow:**
+
+7. Ethereum network will store info about this operation, will unlock the 1-to-1 equivalent of tokens if token is original or mint 1-to-1 equivalent if token is mintable;
+8. User receive funds after successfull execution;
 
 ## Smart contracts stack
 

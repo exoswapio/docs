@@ -17,11 +17,11 @@ Shortly:
 
 Depends on token type - donored or syndicated the following represented in chart during this processes:
 
-|              | Donored                                             | Syndicated                                                |
-|--------------|-----------------------------------------------------|-----------------------------------------------------------|
+|              | Donored                                              | Syndicated                                           |
+|--------------|------------------------------------------------------|------------------------------------------------------|
 | Token prefix | STOS<br/> USDT<br/> DAI<br/> BNB<br/> ETH<br/> MATIC | STOS<br/> USDT<br/> DAI<br/> BNB<br/> ETH<br/> MATIC |
-| Enter        | Lock                                                | Burn                                                      |
-| Exit         | Unlock                                              | Mint                                                      |
+| Enter        | Lock                                                 | Burn                                                 |
+| Exit         | Unlock                                               | Mint                                                 |
 
 For different token types like ERC-20/Native, the **enter** and **enterETH** used respectively. We are called **ETH** in terms to understand that Native currency with payable will be used, to make same API for all EVM chains. So in order to move STOS tokens from Stratos or ETH tokens from Ethereum, enterETH function will be used.
 

@@ -32,6 +32,7 @@ The documentation corresponding contains details for the RPC - HTTP, WS endpoint
 | Gas Token    | `STOS Token` ([For more...](gas-token)) |
 | RPC          | `https://web3-testnet-rpc.thestratos.org` |
 | Block Explorer |[`https://web3-testnet-explorer.thestratos.org`](https://web3-testnet-explorer.thestratos.org)|
+| Faucet | https://web3-testnet-faucet.thestratos.org |
 | Thegraph (graphql) | [`https://web3-testnet-thegraph.thestratos.org/subgraphs/name/`](https://web3-testnet-thegraph.thestratos.org/subgraphs/name/)
 | Thegraph (rpc) | [`https://web3-testnet-thegraph.thestratos.org/rpc/`](https://web3-testnet-thegraph.thestratos.org/rpc/)
 | Thegraph (ipfs) | [`https://web3-testnet-thegraph.thestratos.org/ipfs/`](https://web3-testnet-thegraph.thestratos.org/ipfs/)

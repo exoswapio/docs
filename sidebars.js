@@ -13,18 +13,8 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  basics: [
-    'develop/new-to-project',
-    {
-      type: 'category',
-      label: 'Network Details',
-      items: [
-        'develop/network-details/network',
-        'develop/network-details/gas-token'
-      ],
-    },
-  ],
   bridge: [
+    'develop/new-to-project',
     {
       type: 'category',
       label: 'Architecture',
@@ -47,6 +37,8 @@ const sidebars = {
       type: 'category',
       label: 'Network Details',
       items: [
+        'develop/network-details/network',
+        // 'develop/network-details/gas-token',
         'bridge/network-details/deployed',
         'bridge/network-details/bridged-tokens',
       ],

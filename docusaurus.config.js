@@ -71,12 +71,6 @@ const config = {
         },
         items: [
           {
-            to: 'docs/develop/new-to-project',
-            position: 'left',
-            label: 'Basics',
-            activeBasePath: 'docs/develop',
-          },
-          {
             to: 'docs/bridge/architecture',
             position: 'left',
             label: 'Bridge',

@@ -29,7 +29,6 @@ Architecturally, the beauty of Exoswap bridge is its simple, straightforward des
 | Use proxy            | yes                     | no                    | no                    | yes                    |
 | Supported chains     | Ethereum<br/> Stratos   | Ethereum<br/> Polygon | Ethereum<br/> Polygon | Ethereum<br/> Celo     |
 | Max process duration | ~4-5 minutes            | ~7 days               | ~35-37 minutes        | ~6-8 hours             |
-| Fees                 | ~140-220$               | ~400-500$             | ~400-500$             | ~140-180 + relayer fee |
 
 ### Description of workflow
 

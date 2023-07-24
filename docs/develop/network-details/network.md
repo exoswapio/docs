@@ -13,32 +13,32 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs
-  defaultValue="tropos"
+  defaultValue="mesos"
   values={[
-    { label: 'Tropos-Testnet', value: 'tropos', },
+    { label: 'Mesos-Testnet', value: 'mesos', },
   ]
 }>
-<TabItem value="tropos">
+<TabItem value="mesos">
 
-# Tropos-Testnet
-Tropos Testnet replicates the Stratos Mainnet, which is to be used for testing. Testnet coins are separate and distinct from actual tokens/assets, and are never supposed to have any value. This allows application developers or validators/testers to experiment, without having to use real assets or worrying about breaking the main Stratos chain.
+# Mesos-Testnet
+Mesos Testnet replicates the Stratos Mainnet, which is to be used for testing. Testnet coins are separate and distinct from actual tokens/assets, and are never supposed to have any value. This allows application developers or validators/testers to experiment, without having to use real assets or worrying about breaking the main Stratos chain.
 
 The documentation corresponding contains details for the RPC - HTTP, WS endpoints. There is also a full node setup if you wish to setup your own full node.
 
 |              |                                        |
 |--------------|----------------------------------------|
-| NetworkName  | **Tropos**                                 |
+| NetworkName  | **Mesos**                                 |
 | chainId      | `2047`                                  |
 | Gas Token    | `STOS Token` ([For more...](gas-token)) |
-| RPC          | `https://web3-testnet-rpc.thestratos.org` |
-| Block Explorer |[`https://web3-testnet-explorer.thestratos.org`](https://web3-testnet-explorer.thestratos.org)|
-| Faucet | https://web3-testnet-faucet.thestratos.org |
-| Thegraph (graphql) | [`https://web3-testnet-thegraph.thestratos.org/subgraphs/name/`](https://web3-testnet-thegraph.thestratos.org/subgraphs/name/)
-| Thegraph (rpc) | [`https://web3-testnet-thegraph.thestratos.org/rpc/`](https://web3-testnet-thegraph.thestratos.org/rpc/)
-| Thegraph (ipfs) | [`https://web3-testnet-thegraph.thestratos.org/ipfs/`](https://web3-testnet-thegraph.thestratos.org/ipfs/)
+| RPC          | `https://web3-rpc-mesos.thestratos.org` |
+| Block Explorer |[`https://web3-explorer-mesos.thestratos.org`](https://web3-explorer-mesos.thestratos.org)|
+| Faucet | https://faucet-mesos.thestratos.org |
+| Thegraph (graphql) | [`https://web3-thegraph-mesos.thestratos.org/subgraphs/name/`](https://web3-thegraph-mesos.thestratos.org/subgraphs/name/)
+| Thegraph (rpc) | [`https://web3-thegraph-mesos.thestratos.org/rpc/`](https://web3-thegraph-mesos.thestratos.org/rpc/)
+| Thegraph (ipfs) | [`https://web3-thegraph-mesos.thestratos.org/ipfs/`](https://web3-thegraph-mesos.thestratos.org/ipfs/)
 
 :::important
-Tropos network native token is **STOS** which will be used as gas fee.
+Mesos network native token is **STOS** which will be used as gas fee.
 :::
 
 </TabItem>

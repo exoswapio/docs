@@ -13,25 +13,23 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs
-  defaultValue="tropos"
+  defaultValue="mesos"
   values={[
-    { label: 'Tropos-Testnet', value: 'tropos', },
+    { label: 'Mesos-Testnet', value: 'mesos', },
   ]
 }>
-<TabItem value="tropos">
+<TabItem value="mesos">
 
-# Tropos Testnet :smiling_imp: 
-STOS is the native token of Tropos. This is similar to Ether in Ethereum. To interact with Tropos network, STOS tokens are required to pay as gas fees.
+# Mesos Testnet :smiling_imp: 
+STOS is the native token of Mesos. This is similar to Ether in Ethereum. To interact with Mesos network, STOS tokens are required to pay as gas fees.
 
-On the Tropos chain, the Tropos tokens works as native token. This means that a user can pay gas with STOS as well as send STOS to other accounts same way as they use ETH to pay gas fees on Ethereum and send ETH to others.
+On the Mesos chain, the Mesos tokens works as native token. This means that a user can pay gas with STOS as well as send STOS to other accounts same way as they use ETH to pay gas fees on Ethereum and send ETH to others.
 
-Getting the STOS token is really easy. Ways to get STOS token for Tropos:
+Getting the STOS token please use this CURL:
 
-- FAUCET: [https://web3-testnet-faucet.thestratos.org](https://web3-testnet-faucet.thestratos.org)
-    - Select STOS Token
-    - And network Tropos
-    - Enter your account address and confirm
-
+```
+curl --header "Content-Type: application/json" --request POST --data '{"denom":"stos","address":"<your_st1_address>"}' https://faucet-mesos.thestratos.org/credit
+```
 </TabItem>
 
 </Tabs>

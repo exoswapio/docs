@@ -27,7 +27,7 @@ The documentation corresponding contains details for the RPC - HTTP, WS endpoint
 
 |              |                                        |
 |--------------|----------------------------------------|
-| NetworkName  | **Mesos**                                 |
+| NetworkName  | **Mesos** ([Add to MetaMask](https://chainlist.org/?chain=2048&search=stratos&testnets=true))                                |
 | chainId      | `2047`                                  |
 | Gas Token    | `STOS Token` ([For more...](gas-token)) |
 | RPC          | `https://web3-rpc-mesos.thestratos.org` |

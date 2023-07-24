@@ -25,7 +25,7 @@ values={[
 
 | Symbol 	| Address                                                                                                               	|
 |--------	|-----------------------------------------------------------------------------------------------------------------------	|
-| STOS   	| [0x91aCC9F7092067E027F3a27A929021b878a1E4E5](https://goerli.etherscan.io/token/0x91aCC9F7092067E027F3a27A929021b878a1E4E5) 	|
+| STOS   	| [0xe4A4cF37De40FE8CB5717C7e6F93dA37A104A689](https://goerli.etherscan.io/token/0xe4A4cF37De40FE8CB5717C7e6F93dA37A104A689) 	|
 </TabItem>
 
 </Tabs>

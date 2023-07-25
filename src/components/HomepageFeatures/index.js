@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/rocketman.svg').default,
     description: (
       <>
-        Exo bridge used to process cross-EVM L1/L2 transactions superious fast without waiting so much time with security and less fees
+        Exoswap bridge use to process cross-EVM L1/L2 transactions superious fast without waiting so much time with security and cheaper
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/blockchain.svg').default,
     description: (
       <>
-        Stratos EVM used in order to support smart contracts transactions with tendermint layer to make it cheap and fast
+        Stratos EVM used in order to support smart contracts transactions with tendermint layer to make it cheaper and faster
       </>
     ),
   },

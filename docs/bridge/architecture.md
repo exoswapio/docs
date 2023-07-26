@@ -14,9 +14,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **URL**: https://app.exoswap.io/#/bridge
 
-Exoswap bridge is a blockchain application that provides a transition of tokens between EVM chains. Our team hardworking work on implementaion of Nexus bridge to obtain a transition between multiple chains at once.
+Exoswap bridge is a blockchain application designed to facilitate seamless token transitions between EVM chains. Our hardworking team has been focused on implementing the Nexus bridge, enabling smooth transitions between multiple chains simultaneously.
 
-Architecturally, the beauty of Exoswap bridge is its simple, straightforward design which features a fast, cheap transactions for the token transfering between EVM chains.
+Architecturally, the beauty of Exoswap bridge lies in its simple and straightforward design, which enables fast and cost-effective transactions for transferring tokens between EVM chains.
 
 ### Tutorial
 * Bridge interaction :movie_camera: [Your first Exoswap STOS](https://www.youtube.com)
@@ -32,9 +32,10 @@ Architecturally, the beauty of Exoswap bridge is its simple, straightforward des
 
 ### Description of workflow
 
-Currently, developers can use **Exoswap Bridge** for specific needs to automate DEX cross chain usage behind our contracts with the help of cosigners handling. **Cosigner** shortly is who verify and sign a transactions for validity, so give it's proof. The group of cosigners called **verifier group** which regulates the token pegging, detect fraud and oracalize netowork info.
+Currently, developers can use **Exoswap Bridge** for specific needs to automate DEX cross-chain usage behind our contracts with the help of cosigners handling. **Cosigner**, shortly, is the one who verifies and signs transactions for validity, providing its proof. The group of cosigners is called the **verifier group**, which regulates token pegging, detects fraud, and oraclizes network information.
 
-The native chain to make bridge used Stratos network with the power of EVM and called **exoswap** bridge.
+
+The native chain used to create the bridge is the Stratos network, harnessing the power of EVM and referred to as the **Exoswap** bridge.
 
 Exoswap bridge has a three-steps architecture, hovewer tokens logics differ in case of token **original transfers**. Let's introduce a quick example.
 
@@ -95,7 +96,7 @@ As example let's take Stratos to Ethereum flow
 
 Exoswap bridge maintains a set of smart contracts on Stratos, Ethereum, Binance, Matic, which handle the following:
 
-- Bridge Token contract which is a syndicated token equivalent for donor token;
+- Bridge Token contract which is a exoswap token equivalent for donor token;
 - Bridge Token Manager for verification 1-to-1 connection;
 - Bridge Cosigner Manager verificator for exoswap;
 - Bridge Router the main orchestrator for all 3 contracts above;

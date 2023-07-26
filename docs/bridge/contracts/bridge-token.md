@@ -9,10 +9,9 @@ keywords:
 image: https://raw.githubusercontent.com/stratosnet/token-lists/master/logo.svg
 ---
 
-For the Exoswap's Bridge tokens connection between chains, used [**exoswap**](/docs/bridge/glossary) token to make a mapping with [**donor**](/docs/bridge/glossary) token
+To establish the connection between chains, the Bridge utilizes the [**exoswap**](/docs/bridge/glossary) token to create a mapping with the [**donor**](/docs/bridge/glossary) token.
 
-The whole design is simple. It is a ERC-20 contract with mint/burn functions where [**Bridge Token Manager**](/docs/bridge/contracts/bridge-token-manager) will handle the token mapping and [**Bridge Router**](/docs/bridge/contracts/bridge-router) will have only access to perform this operations.
-
+The whole design is simple. It is an ERC-20 contract with mint/burn functions, where [**Bridge Token Manager**](/docs/bridge/contracts/bridge-token-manager) will handle the token mapping, and the [**Bridge Router**](/docs/bridge/contracts/bridge-router) will only have access to perform this operation.
 
 ## Base functionality
 
@@ -37,8 +36,7 @@ function burn(address from, uint256 amount) external;
 - Should burn only in the same equivalent for next donored tokens unlock;
 
 ## Donored token symbol changed?
-
-In case donored token change it's symbol (like proxy contract), the following changes could be made to change it for exoswap token by SAO
+In case donored token changes its symbol (like proxy contract), the following changes could be made to update it for Exoswap Token by SAO.
 
 ### updateTokenInfo
 
@@ -54,4 +52,5 @@ function updateTokenInfo(
 - Should not change decimals;
 ---
 
-NOTE: `updateTokenInfo` function aren't not implemented for bridge usage (will be in Version 1).
+
+NOTE: `updateTokenInfo` function is not implemented for bridge usage (will be in Version 1).

@@ -9,7 +9,8 @@ keywords:
 image: https://raw.githubusercontent.com/stratosnet/token-lists/master/logo.svg
 ---
 
-Bridge Token Manager is used for issuing a new tokens 1-to-1 connection between donor and exoswap tokens, revoke deprecated tokens (or after bridge update), fetching info about local token representation.
+The Bridge Token Manager is used for issuing new tokens with a 1-to-1 connection between donor and Exoswap tokens, revoking deprecated tokens (or after a bridge update), and fetching information about local token representation.
+
 
 ## Base functionality
 

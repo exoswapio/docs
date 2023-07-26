@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/blockchain.svg').default,
     description: (
       <>
-        Stratos EVM is employed to facilitate smart contract transactions, leveraging the Tendermint layer to achieve greater efficiency and cost-effectiveness.
+        Stratos EVM is employed to facilitate smart contract transactions, leveraging the Tendermint layer to achieve greater efficiency and better performance.
       </>
     ),
   },

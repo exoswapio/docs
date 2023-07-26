@@ -9,7 +9,9 @@ keywords:
 image: https://raw.githubusercontent.com/stratosnet/token-lists/master/logo.svg
 ---
 
-Bridge Router is a core functionality which manage the token issuing (means transfer or mint/burn), double spend protection, re-entrancy guarded. It's functionality API simple in mature, in order to start a bridge process, smart contract function **enter** on local chain is used which is mean "Make enter to a bridge process for the next exit process". So after enter it is always expected to be **exit** smart contract process in terms of meaning "Have passed all checks in enter and finalize a process" on external chain.
+The Bridge Router is a core functionality that manages token issuing (including transfer or mint/burn), double-spend protection, and re-entrancy guarding. Its functionality API is simple and mature. To initiate a bridge process, the smart contract function 'enter' is used on the local chain, which means "Make an entry to a bridge process for the next exit process". After 'enter', the process is always expected to be finalized with the 'exit' smart contract process, meaning "All checks in 'enter' have passed, and the process is finalized" on the external chain.
+
+
 
 Shortly:
 
@@ -23,7 +25,9 @@ Depends on token type - donored or syndicated the following represented in chart
 | Enter        | Lock                                                 | Burn                                                 |
 | Exit         | Unlock                                               | Mint                                                 |
 
-For different token types like ERC-20/Native, the **enter** and **enterETH** used respectively. We are called **ETH** in terms to understand that Native currency with payable will be used, to make same API for all EVM chains. So in order to move STOS tokens from Stratos or ETH tokens from Ethereum, enterETH function will be used.
+For different token types like ERC-20/Native, the 'enter' and 'enterETH' functions are used respectively. We use 'ETH' in terms of understanding that the native currency with payable will be used, making the API consistent across all EVM chains. So, to move STOS tokens from Stratos or ETH tokens from Ethereum, the 'enterETH' function will be used.
+
+
 
 ### enter
 
@@ -40,7 +44,7 @@ function enter(
 - Should not allow zero token to be used in this function (zero means native token);
 - Target chain could not be equal to local chain, token manager is responsible for this;
 - Should not accept zero amount;
-- Should increase nonce after each successfull execution;
+- Should increase nonce after each successful execution;
 - Could not burn if amount does not exists on address;
 - Could not withdraw from address if not enough balance;
 - Token address should be address;
@@ -63,7 +67,7 @@ function enterETH(
 - Should not accept zero amount;
 - Native token should be enable in token manager;
 - Not responsible for burn or mint;
-- Should increase nonce after each successfull execution;
+- Should increase nonce after each successful execution;
 - Deadline should be greater than block execution time;
 - Amount min should be less than amount (for relayer price deviation calculation + fee);
 - Amount min could be equal to amount if tx will be without relayer;
@@ -88,4 +92,4 @@ function exit(
 - Should be protected from re-entrancy;
 - Should be protected from double spend;
 - Should have enough exoswap signatures to complete this operation;
-- Process params adding controll for gas execution limitation and mostly for relayer purposes;
+- Process params adding control for gas execution limitation and mostly for relayer purposes;

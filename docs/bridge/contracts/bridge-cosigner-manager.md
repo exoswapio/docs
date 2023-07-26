@@ -9,8 +9,8 @@ keywords:
 image: https://raw.githubusercontent.com/stratosnet/token-lists/master/logo.svg
 ---
 
-In order to provide anti-fraud protection, the cosigner manager is developed for. It check on validity of [enter](/docs/bridge/contracts/bridge-router#enter) result, verify correct signatures of exoswap on chain and it's uniqueness. In order to be a successfull transaction at 
-[exit](/docs/bridge/contracts/bridge-router#exit) function, it should have more than 66% of votes collected from cosigners and which is called **exoswap**.
+To provide anti-fraud protection, the cosigner manager has been developed. It checks the validity of the [enter](/docs/bridge/contracts/bridge-router#enter) result, verify correct signatures of exoswap on chain and ensures its uniqueness. For a successful transaction at the [exit](/docs/bridge/contracts/bridge-router#exit) function, it should have more than 66% of votes collected from cosigners.
+
 
 
 ## Base functionality
